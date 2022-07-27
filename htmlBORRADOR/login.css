@@ -1,0 +1,377 @@
+
+/*--LOGIN CSS--*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    font-family:'Open Sans'; 
+}
+
+main{
+    margin:20px 20px 20px 20px;
+}
+
+.inCuentaLog h4{
+    margin: 20px 0 20px 0px;
+    font-weight: normal;
+}
+
+.iniciarSesion h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginConGgFb{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.gg{
+    background-color: rgb(219 68 55);
+    width: 50%;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+    margin-right: 5px;
+}
+
+.gg span{
+    display: none;
+}
+
+.gg:hover{
+    background-color:  rgb(218, 83, 71);
+}
+
+.fb{
+    background-color: #3b5998;
+    width: 50%;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s;
+    margin-left:5px;
+}
+
+.fb span{
+    display:none;
+}
+
+.fb:hover{
+    background-color: #4f6596;
+}
+
+.loginForm{
+    text-align: center;
+}
+
+
+.loginForm .nombre, .loginForm .contraseña{
+    width: 90vw;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #0f372c;
+}
+
+.loginForm input:focus{
+    font-weight: bold;
+    color: #0f372c;
+}
+
+.loginForm input::placeholder{
+    color: #0f372c;
+}
+
+.loginForm .feedback{
+    position: relative;
+    left: 115px;
+    bottom: 32px;
+    z-index: 1;
+}
+
+.loginForm input:focus:invalid ~ .feedback::after{
+    content:"* Requerido";
+    font-size: 14px;
+    color:red;
+    font-weight: normal;
+    
+}
+
+.loginForm input:focus:valid ~ .feedback::after{
+    color: #39b54a;
+    content: "✔";
+    font-size: 14px;
+}
+
+.loginForm p{
+    font-size: 12px;
+    text-align: right;
+}
+
+.loginForm p a{
+    text-decoration: none;
+    color:#0f372c;
+}
+
+.loginForm p a:hover{
+    color: #9EAB5B ;
+    font-weight: 600;
+}
+
+.botonInicio{
+    margin-top: 20px;
+    background-color: #0f372c;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width:50%;
+    padding: 7px 15px;
+    border: none;
+    transition: all 0.4s;
+}
+
+.botonInicio:hover{
+    background-color: #9EAB5B;
+    }
+
+.contenedorRobot{
+    display: flex;
+    justify-content: center;
+}
+
+.robot{
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0f372c;
+    width: 55%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.robot p{
+    font-size: 14px;
+}
+
+.robot img{
+    width: 30px;
+}
+
+.registrate{
+    color:#0f372c;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registrate a:link{
+    text-decoration: none;
+}
+
+.registrate a:visited{
+    color:#0f372c;
+}
+
+.registrate a:visited:hover{
+    color:#9EAB5B;
+    font-weight: 600;
+}
+
+.registrate:hover{
+    color: #9EAB5B;
+    font-weight: 600;
+}
+
+
+@media (min-width: 481px){
+
+
+    .gg{
+        margin-right: 2px; 
+    }
+
+    .gg span{
+        display: inline;
+    }
+
+    .fb{
+        margin-left: 2px;  
+    }
+
+    .fb span{
+        display: inline;
+    }
+
+    .loginForm .feedback{
+        left: 140px;
+    }
+
+    .loginForm input:focus:invalid ~ .feedback::after{
+        content:"* Campo requerido";    
+    }
+
+    .robot{
+        width: 45%;
+        padding: 15px;
+    }
+
+    .botonInicio{
+        width: 35%;
+    }
+}
+
+
+@media (min-width: 769px){
+
+    main{
+        margin:20px 40px 20px 40px;
+    }
+
+    .loginConGgFb{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .gg{
+        width: 35%;
+    }
+
+    .fb{
+        width: 35%;
+    }
+
+    .loginForm .nombre, .loginForm .contraseña{
+        width: 65vw;
+        
+    }
+
+    .loginForm .feedback{
+        left: 165px;
+    }
+
+    .loginForm p{
+        text-align: center;
+    }
+
+    .robot{
+        width: 30%;
+        
+    }
+
+    .botonInicio{
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 960px){
+
+    .gg{
+        width: 35%;
+    }
+
+    .fb{
+        width: 35%;
+        
+    }
+
+    .loginForm .feedback{
+        left: 230px;
+    }
+
+    .robot{
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    .inCuentaLog h4{
+        font-size: 20px;
+    }
+
+    .iniciarSesion h2{
+        font-size: 32px;
+    }
+
+    .gg{
+        width: 26%;
+        padding: 7px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .fb{
+        width: 26%;
+        padding: 7px;
+        font-size: 18px;
+    }
+
+    .loginForm .nombre, .loginForm .contraseña{
+        width: 50vw;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .loginForm .feedback{
+        left: 220px;
+        bottom: 40px;
+        
+    }
+
+    .loginForm input:focus:invalid ~ .feedback::after{
+        font-size: 18px;   
+    }
+    
+    .loginForm input:focus:valid ~ .feedback::after{
+        font-size: 18px;
+    }
+
+    .loginForm p{
+        font-size: 14px;
+    }
+    
+    .robot{
+        width: 15%;
+    }
+
+    .robot p{
+        font-size: 18px;
+    }
+
+    .robot img{
+        width: 40px;
+    }
+
+    .botonInicio{
+        width: 25%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .registrate p{
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1700px){
+    .loginForm .feedback{
+        left: 310px;
+        bottom: 40px;
+        
+    }
+}
+
+
+

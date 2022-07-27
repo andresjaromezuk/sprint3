@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include('../partials/head.ejs') %> 
+<body>
+
+    <%- include('../partials/headerAdmin.ejs', {producto}) %> 
+
+
+   <main class="editMain">
+      <h2>Editar producto</h2>
+      <form class="editForm" action="edit/<%=producto.id %>?_method=put" method="POST">
+         <div class="editInputContainer">
+            <label for="nombre"> Nombre </label>
+            <input type="text" name="nombre" id="nombre" value="<%= producto.nombre%>" required>
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" value="<%= producto.descripcion%>" cols="30" rows="10"></textarea>
+            <div class="editImages">
+               <label for="imagen"> Imagen </label>
+               <input type="file" name="imagen" id="imagen" accept=".png, .jpeg, .jpg" value="<%= producto.imagen%>" required>
+               <label for="imagenDetail"> Imagen detalle </label>
+               <input type="file" name="imagenDetail" id="imagenDetail" accept=".png, .jpeg, .jpg" value="<%= producto.imagenDetail%>" required>
+            </div>
+            <label for="categoria">Categoría</label>
+            <input type="text" name="categoria" id="categoria" value="<%= producto.categoria%>" required>
+            <label>Tamaño</label>
+            <select name="tamaño">
+               <option value="small"> S (Small) </option>
+               <option value="medium"> M (Medium) </option>
+               <option value="large"> L (Large) </option>
+               <option value="extra-large"> XL (Extra Large) </option>
+            </select>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" value="<%= producto.precio%>" required>
+            <div class="editBenefits">
+               <label for="cuotas">Cuotas</label>
+               <input type="number" name="cuotas" id="cuotas" value="<%= producto.cuotas%>" required>
+               <label>Oferta</label>
+               <select name="oferta" >
+                  <option value="true"> True </option>
+                  <option value="false"> False </option>
+               </select>
+            </div>
+            </div>
+         <button type="submit"> Guardar cambios </button>
+      </form>
+   </main>
+
+   <%- include('../partials/footer.ejs') %> 
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fittonia",
+        "descripcion": "",
+        "imagen": "fittonia1.jpg",
+        "imagenDetail":"fittonia2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Small",
+        "precio": 3000,
+        "cuotas": 500,
+        "oferta": true
+    },
+    {
+        "id": 2,
+        "nombre": "Ficus elástica",
+        "descripcion": "",
+        "imagen": "ficus-elastica1.jpg",
+        "imagenDetail":"ficus-elastica2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Medium",
+        "precio": 5300,
+        "cuotas": 883,
+        "oferta": false
+    },
+    {
+        "id": 3,
+        "nombre": "Nerium Oleander",
+        "descripcion": "",
+        "imagen": "nerium-oleander1.jpg",
+        "imagenDetail":"nerium-oleander2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Large",
+        "precio": 7600,
+        "cuotas": 1266,
+        "oferta": true
+    },
+    {
+        "id": 4,
+        "nombre": "Agapanthus Africanus",
+        "descripcion": "",
+        "imagen": "agapanthus-africanus1.jpg",
+        "imagenDetail":"agapanthus-africanus2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Medium",
+        "precio": 5300,
+        "cuotas": 883,
+        "oferta": false
+
+    },
+    {
+        "id": 5,
+        "nombre": "Begonia Maculata",
+        "descripcion": "",
+        "imagen": "begonia-maculata1.jpg",
+        "imagenDetail":"begonia-maculata2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Medium",
+        "precio": 5300,
+        "cuotas": 883,
+        "oferta": true
+    },
+    {
+        "id": 6,
+        "nombre": "Syngonium Albo",
+        "descripcion": "",
+        "imagen": "syngonium-albo1.jpg",
+        "imagenDetail":"syngonium-albo2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Small",
+        "precio": 3000,
+        "cuotas": 500,
+        "oferta": false
+    },
+    {
+        "id": 7,
+        "nombre": "Tradescantia Pallida",
+        "descripcion": "",
+        "imagen": "tradescantia-pallida1.jpg",
+        "imagenDetail":"tradescantia-pallida2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Medium",
+        "precio": 5300,
+        "cuotas": 883,
+        "oferta": true
+    },
+    {
+        "id": 8,
+        "nombre": "Tradescantia Anthurium",
+        "descripcion": "",
+        "imagen": "tradescantia-anthurium1.jpg",
+        "imagenDetail":"tradescantia-anthurium2.jpg",
+        "categoria": "Planta",
+        "tamaño": "Large",
+        "precio": 7600,
+        "cuotas": 1266,
+        "oferta": false
+    }
+]

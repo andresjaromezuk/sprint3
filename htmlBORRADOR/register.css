@@ -1,0 +1,345 @@
+/*--REGISTRO CSS--*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family:'Open Sans';
+}
+
+main{
+    margin:20px 20px 20px 20px;
+}
+
+.inReg h4{
+    margin: 20px 0 20px 0px;
+    font-weight: normal;
+}
+
+
+.loginCon h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginConGgFb{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.gg{
+    background-color: rgb(219 68 55);
+    width:80%;
+    border: none;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+}
+
+.gg span{
+    display: none;
+}
+
+.gg:hover{
+    background-color:  rgb(218, 83, 71);
+}
+
+.fb{
+    background-color: #3b5998;
+    width:80%;
+    border: none;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.fb span{
+    display:none;
+}
+
+.fb:hover{
+    background-color: #4f6596;
+}
+
+.registerForm{
+    text-align: center;
+}
+
+.registerForm input{
+    width: 90vw;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #0f372c;
+}
+
+.registerForm input:focus{
+    font-weight: bold;
+    color: #0f372c;
+}
+
+.registerForm input::placeholder{
+    color: #0f372c;
+}
+
+.registerForm .feedback{
+    position: relative;
+    left: 115px;
+    bottom: 32px;
+    z-index: 1;
+}
+
+.registerForm input:focus:invalid ~ .feedback::after{
+    content:"* Requerido";
+    font-size: 14px;
+    color:red;
+    font-weight: normal;
+    
+}
+
+.registerForm input:focus:valid ~ .feedback::after{
+    color: #39b54a;
+    content: "✔";
+    font-size: 14px;
+}
+
+.registerForm button{
+    margin-top: 20px;
+    background-color: #0f372c;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width:50%;
+    padding: 7px 15px;
+    border: none;
+    transition: all 0.4s;
+}
+
+
+.registerForm button:hover{
+    background-color: #9EAB5B;
+}
+.contenedorRobot{
+    display: flex;
+    justify-content: center;
+}
+
+.robot{
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0f372c;
+    width: 55%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.robot .checkbox{
+    width: 15%;
+}
+
+.robot p{
+    font-size: 14px;
+}
+
+.robot img{
+    width: 30px;
+}
+
+.yaTenesCuenta{
+    color:#0f372c;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.yaTenesCuenta a:link{
+    text-decoration: none;
+}
+
+.yaTenesCuenta a:visited{
+    color:#0f372c;
+}
+
+.yaTenesCuenta a:visited:hover{
+    color: #9EAB5B;
+    font-weight: 600;
+    
+}
+
+.yaTenesCuenta:hover{
+    color: #9EAB5B;
+    font-weight: 600;
+}
+
+@media (min-width: 481px){
+
+    .gg span{
+        display: inline;
+    }
+
+    .fb{
+        margin-left: 2px;  
+    }
+
+    .fb span{
+        display: inline;
+    }
+
+    .registerForm .feedback{
+        left: 140px; 
+    }
+
+    .registerForm input:focus:invalid ~ .feedback::after{
+        content:"* Campo requerido";    
+    }
+
+    .robot{
+        width: 45%;
+        padding: 10px;
+    }
+
+    .registerForm button{
+        width: 35%;
+    }
+}
+
+@media (min-width: 769px){
+
+    main{
+        margin:20px 40px 20px 40px;
+    }
+
+    .loginConGgFb{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .gg{
+        width: 35%;
+    }
+
+    .fb{
+        width: 35%;
+    }
+
+    .registerForm input{
+        width: 65vw;  
+    }
+
+    .registerForm .feedback{
+        left: 165px; 
+    }
+
+    .robot{
+        width: 30%;
+    }
+
+    .registerForm button{
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 960px){
+
+    .gg{
+        width: 35%;
+    }
+
+    .fb{
+        width: 35%;
+        
+    }
+
+    .registerForm .feedback{
+        left: 230px; 
+    }
+
+    .robot{
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    .inReg h4{
+        font-size: 20px;
+    }
+
+    .loginCon  h2{
+        font-size: 32px;
+    }
+
+    .gg{
+        width: 26%;
+        padding: 7px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .fb{
+        width: 26%;
+        padding: 7px;
+        font-size: 18px;
+    }
+
+    .registerForm input{
+        width: 50vw;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .registerForm .feedback{
+        left: 220px;
+        bottom: 40px;
+    }
+
+    .registerForm input:focus:invalid ~ .feedback::after{
+        font-size: 18px;   
+    }
+
+    .registerForm  input:focus:valid ~ .feedback::after{
+        font-size: 18px;
+    }
+
+    
+    .robot{
+        width: 15%;
+    }
+
+    .robot p{
+        font-size: 18px;
+    }
+
+    .robot img{
+        width: 40px;
+    }
+
+
+    .registerForm button{
+        width: 25%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .yaTenesCuenta{
+        font-size: 20px;
+    }
+
+}
+
+
+@media (min-width: 1700px){
+    .registerForm .feedback{
+        left: 310px;
+        bottom: 40px;   
+    }
+}
